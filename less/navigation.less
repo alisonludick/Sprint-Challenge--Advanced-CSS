@@ -6,11 +6,20 @@
     border-radius: 10px;
     text-align: center; 
     align-items: center;
+    // justify-content: space-around; 
+    justify-content: space-evenly; 
+    // position: fixed; 
+    // top: 0; 
+    // width: 100%; 
 
     a {
         display: inline-block;
-        padding: 20px 2%;
+        // padding: 20px 2%;
         font-size: 15px;
+        @media @phone {
+            font-size: 2rem; 
+            padding-top: 0.5rem; 
+        }
     }
     
     h2 {
@@ -18,10 +27,8 @@
         padding: 20px 0;
         display: flex;
         justify-content: center; 
-    }
-
-    @media @phone {
-        // font-family: cursive; 
-        
+        @media @phone {
+            font-size: 5rem; 
+        }
     }
 }
