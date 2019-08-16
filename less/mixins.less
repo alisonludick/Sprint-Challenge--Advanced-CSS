@@ -1,6 +1,6 @@
 // Mixins Here
 
-@background-color: darkgrey;
+@background-color: rgb(20, 8, 48);
 @font-color: azure;
 
 // Mixin
@@ -17,26 +17,16 @@
     color: @font-color;
     font-size: large; 
     text-decoration: none;
-    padding: 25px;
-    &:hover, &:active {
-        color: @background-color;
-        background: @font-color; 
-        ;
-    } 
-
-    .border-radius(5px);
-
-}
-
-.btn {
-    display: inline-block;
-    background: darkgray;
-    color: azure;
-    font-size: large; 
-    text-decoration: none;
-    padding: 25px;
-
+    padding: 10px 20px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    &:hover, &:active {
+        color: @background-color;
+        background: @font-color;
+    } 
+}
+
+.btn(fontcolor, paddingSize) {
+    
 }
