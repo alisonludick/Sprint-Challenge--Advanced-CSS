@@ -1,1 +1,35 @@
 // Mixins Here
+
+// Mixin
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+// How to use
+.btn {
+    display: inline-block;
+    background: darkgrey;
+    color: azure;
+    font-size: large; 
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 25px;
+
+    .border-radius(5px);
+}
+
+.btn {
+    display: inline-block;
+    background: darkgray;
+    color: azure;
+    font-size: large; 
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 25px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
