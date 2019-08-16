@@ -1,5 +1,8 @@
 // Mixins Here
 
+@background-color: darkgrey;
+@font-color: azure;
+
 // Mixin
 .border-radius(@radius) {
     -webkit-border-radius: @radius;
@@ -10,14 +13,19 @@
 // How to use
 .btn {
     display: inline-block;
-    background: darkgrey;
-    color: azure;
+    background: @background-color;
+    color: @font-color;
     font-size: large; 
-    text-transform: uppercase;
     text-decoration: none;
     padding: 25px;
+    &:hover, &:active {
+        color: @background-color;
+        background: @font-color; 
+        ;
+    } 
 
     .border-radius(5px);
+
 }
 
 .btn {
@@ -25,7 +33,6 @@
     background: darkgray;
     color: azure;
     font-size: large; 
-    text-transform: uppercase;
     text-decoration: none;
     padding: 25px;
 
