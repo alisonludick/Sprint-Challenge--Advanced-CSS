@@ -57,17 +57,19 @@
     
     @media @phone {
       flex-direction: column-reverse; 
+      padding: 15px; 
       width: 100%;
     }
 
     .walk-text {
       width: 50%;
       @media @phone {
-        display: inline-block; 
-        max-width: 100%;  
+        display: flex; 
+        flex-direction: column; 
+        width: 100%;  
         p {
           display: block; 
-          max-width: 100%;         }     
+          width: 100%;         }     
       }
 
       h3 {
@@ -85,7 +87,9 @@
 
       .btn {
         @media @phone {
-          max-width: 500px;
+          text-align: center; 
+          padding: 25px 0;
+          font-weight: 600; 
         }
       }
     }
@@ -95,6 +99,7 @@
       margin-left: 4%;
       @media @phone {
         width: 100%; 
+        margin-left: 0; 
     }
       
       img {
